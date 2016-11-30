@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    >
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/accelerometer"
+        android:id="@+id/ibshake"
+        android:background="@android:color/background_light" />
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/activity_options"
+        android:layout_width="168dp"
+        android:layout_height="145dp"
+        android:orientation="horizontal"
+        tools:context="vivek.felight.com.sensors.Options"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="168dp"
+            android:layout_height="145dp"
+            app:srcCompat="@drawable/sensorsall"
+            android:id="@+id/ibsensorall"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/activity_options2"
+        android:layout_width="168dp"
+        android:layout_height="145dp"
+        android:orientation="horizontal"
+        tools:context="vivek.felight.com.sensors.Options"
+        >
+
+        <ImageButton
+            android:layout_width="168dp"
+            android:layout_height="145dp"
+            app:srcCompat="@drawable/compass"
+            android:id="@+id/magnetic"
+            android:background="@android:color/background_light" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_options3"
+        android:layout_width="168dp"
+        android:layout_height="145dp"
+        android:orientation="vertical"
+        tools:context="vivek.felight.com.sensors.Options"
+        android:weightSum="1">
+
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/magstrength"
+            android:id="@+id/ibmagstrength" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="193dp"
+        app:srcCompat="@drawable/shake"
+        android:id="@+id/ibmove" />
+
+
+</LinearLayout>
+</ScrollView>
+
